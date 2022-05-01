@@ -1,0 +1,6 @@
+efficientnet-pytorch==0.7.0
+numpy==1.19.4
+torch==1.7.0+cu101
+dgl ==
+
+
