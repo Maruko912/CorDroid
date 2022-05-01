@@ -9,19 +9,17 @@
 
 ## Experiment
 
-1. train fun2vec_model
+### 1. Feature Extraction
+The following scripts can be used to extract E-SFCG and OMM features:
+* feature_extract.py -- extract the E-SFCG (including adjacency matrix, node feature matrix) and OMM features.
 
-   see feature_extract/fcg 
+### 2. Train OMM model and E-SFCG model
+* omm_train/train.py -- train OMM model
+* sfcg_train/train.py -- train E-SFCG model
 
-2. feature extraction
+### 3. Classification
+* test.py -- fuse the two models to classify samples.
 
-   Use the feature_extract script to extract the function call graph (including adjacency matrix, node feature matrix) and OMM features.
-
-3. train OMM model and E-SFCG model
-
-   use the omm_train/train script  to train OMM model, and use the sfcg_train/train script  to train E-SFCG model
-
-4. Test Cordroid
-
-   use test.py to test Cordroid
+## Others
+* OMM_heatmap/ --the OMM heatmap under the Reorder and Reflection obfuscation technologies.
 
